@@ -5,7 +5,7 @@ export default function register() {
       <form className="flex flex-col gap-3">
         <input type="email" placeholder="Email" className="border p-2 rounded"/>
         <input type="password" placeholder="Password" className="border p-2 rounded"/>
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded">Login</button>
+        <button type="submit" className="bg-blue-500 text-white p-2 rounded">Register</button>
       </form>
     </div>
   );
