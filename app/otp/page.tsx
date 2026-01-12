@@ -1,7 +1,9 @@
 "use client";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function OtpPage() {
+  const router = useRouter();
   const [timeLeft, setTimeLeft] = useState(120); // 2 minutes = 120 sec
 
   useEffect(() => {
@@ -60,6 +62,13 @@ export default function OtpPage() {
           Resend OTP
         </button>
       )}
+       {/*go back */}
+        <button
+        onClick={() => router.push("/login")}
+        className="mt-4 text-sm text-blue-500 hover:underline"
+        >
+           Go back
+        </button>
     </div>
   );
 }

@@ -1,22 +1,73 @@
+"use client";
 
-    export default function Login() {
-        return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+export default function LoginPage() {
+  const router = useRouter();
 
-      <div className="flex flex-col items-center mb-6">
-  <h1 className="text-3xl font-bold text-blue-500">
-    Home/mate
-  </h1>
-  <p className="text-black text-lg mt-1">
-    Welcome!
-  </p>
-</div>
-      <h2 className="text-2xl font-bold mb-4">Login</h2>
-      <form className="flex flex-col gap-3">
-        <input type="email" placeholder="Email" className="border p-2 rounded"/>
-        <input type="password" placeholder="Password" className="border p-2 rounded"/>
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded">Login</button>
-      </form>
+  const [mobile, setMobile] = useState("");
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
+      
+      {/* App Name */}
+      <h1 className="text-3xl font-semibold text-teal-500 mb-2">
+        home/mate
+      </h1>
+
+      {/* Welcome Text */}
+      <h2 className="text-xl font-medium mb-1">Welcome!</h2>
+      <p className="text-gray-500 mb-8 text-center">
+        Please Login or SignUp to continue
+      </p>
+
+      {/* Mobile Number */}
+      <div className="w-full max-w-sm mb-6">
+        <label className="block text-sm font-medium mb-1">
+          Mobile no.
+        </label>
+        <div className="flex items-center border rounded-lg px-3 py-2">
+          <span className="text-gray-500 mr-2">+91</span>
+          <input
+            type="tel"
+            placeholder="xxxxxxxxxx"
+            value={mobile}
+            onChange={(e) => setMobile(e.target.value)}
+            className="flex-1 outline-none"
+          />
+        </div>
+      </div>
+
+      {/* Send OTP Button */}
+      <button
+  onClick={() => {
+    if (mobile.length !== 10) {
+      alert("Please enter a valid mobile number");
+      return;
+    }
+    router.push("/otp");
+  }}
+className="bg-teal-500 text-white px-10 py-3 rounded-lg mb-6 hover:bg-teal-600">
+  Send OTP
+</button>
+
+      {/* Divider */}
+      <p className="text-gray-400 mb-4">Or use</p>
+
+      {/* Password Button */}
+      <button 
+       onClick={() => {router.push("/password_verification");
+       }}
+      className="border px-10 py-3 rounded-lg mb-8">
+        Password
+      </button>
+
+      {/* Sign Up */}
+      <button
+      onClick={() => {router.push("/register");
+       }}
+       className="text-sm text-gray-400">
+        New user? <span className="text-teal-500 cursor-pointer">Sign up</span>
+      </button>
     </div>
   );
 }

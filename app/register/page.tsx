@@ -1,4 +1,7 @@
+"use client";
+import { useRouter } from "next/navigation";
 export default function Register() {
+  const router = useRouter();
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="w-80 flex flex-col gap-4">
@@ -35,11 +38,18 @@ export default function Register() {
         <div className="flex justify-center mt-4">
   <button className="bg-blue-500 text-white px-6 py-2 rounded-md">
     Sign up
-  </button>
+ </button>
+ 
 </div>
 </form>
         
-
+  {/*go back */}
+        <button
+        onClick={() => router.push("/login")}
+        className="mt-4 text-sm text-blue-500 hover:underline"
+        >
+           Go back
+        </button>
       </div>
     </div>
   );
