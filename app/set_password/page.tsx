@@ -1,4 +1,7 @@
+"use client";
+import { useRouter } from "next/navigation";
 export default function SetPasswordPage() {
+  const router = useRouter();
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
       
@@ -34,6 +37,14 @@ export default function SetPasswordPage() {
         {/* Confirm Button */}
         <button className="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition">
           Confirm
+        </button>
+
+          {/*go back */}
+        <button
+        onClick={() => router.push("/register")}
+         className="mt-4 block mx-auto text-sm text-blue-500 hover:underline"
+        >
+           Go back
         </button>
       </div>
 

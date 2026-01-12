@@ -34,17 +34,20 @@ export default function Register() {
           placeholder="Location"
           className="border p-2 rounded"
         />
-        <form>
+        
         <div className="flex justify-center mt-4">
-  <button className="bg-blue-500 text-white px-6 py-2 rounded-md">
-    Sign up
- </button>
+        <button 
+        onClick={() => router.push("/set_password")}
+        className="bg-blue-500 text-white px-6 py-2 rounded-md">
+          Sign up
+       </button>
  
-</div>
-</form>
+    </div>
+
         
   {/*go back */}
         <button
+        type="button"
         onClick={() => router.push("/login")}
         className="mt-4 text-sm text-blue-500 hover:underline"
         >
