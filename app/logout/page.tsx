@@ -6,7 +6,6 @@ export default function LogoutPage() {
   const router = useRouter();
 
   const handleLogout = () => {
-    // yaha future me token / session clear kar sakta hai
     router.push("/login");
   };
 
