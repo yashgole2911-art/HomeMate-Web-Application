@@ -38,7 +38,7 @@ export default function Register() {
         <div className="flex justify-center mt-4">
         <button 
         onClick={() => router.push("/set_password")}
-        className="bg-blue-500 text-white px-6 py-2 rounded-md">
+        className="bg-teal-500 text-white px-6 py-2 rounded-md">
           Sign up
        </button>
  

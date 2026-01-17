@@ -64,7 +64,7 @@ export default function WorkDetailsPage() {
 
         
         {/* Confirm Button */}
-        <button className="w-full bg-blue-500 text-white py-2 rounded-lg mt-6 font-medium hover:bg-blue-600 transition">
+        <button className="w-full bg-teal-500 text-white py-2 rounded-lg mt-6 font-medium hover:bg-teal-600 transition">
           Save Profile
         </button>
       </div>

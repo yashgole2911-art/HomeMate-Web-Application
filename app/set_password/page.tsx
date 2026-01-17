@@ -35,13 +35,13 @@ export default function SetPasswordPage() {
         />
 
         {/* Confirm Button */}
-        <button className="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition">
+        <button className="w-full bg-teal-500 text-white py-2 rounded-lg font-medium hover:bg-teal-600 transition">
           Confirm
         </button>
 
           {/*go back */}
         <button
-        onClick={() => router.push("/register")}
+        onClick={() => router.back()}
          className="mt-4 block mx-auto text-sm text-blue-500 hover:underline"
         >
            Go back

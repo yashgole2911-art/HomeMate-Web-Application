@@ -27,7 +27,7 @@ export default function LogoutPage() {
           <div className="flex gap-4">
             <button
               onClick={handleLogout}
-              className="w-28 py-2 rounded-md bg-sky-500 text-white font-medium hover:bg-sky-600 transition"
+              className="w-28 py-2 rounded-md bg-teal-500 text-white font-medium hover:bg-teal-600 transition"
             >
               Yes
             </button>

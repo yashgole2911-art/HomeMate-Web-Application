@@ -63,7 +63,7 @@ export default function PersonalDetailsPage() {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-6">
-          <button className="flex-1 bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600">
+          <button className="flex-1 bg-teal-500 text-white py-2 rounded-lg font-medium hover:bg-teal-600">
             Continue
           </button>
 
