@@ -27,8 +27,10 @@ export default function SettingsPage() {
           </button>
 
           <button
-            onClick={() => alert("Delete account clicked")}
-            onClick={() => router.push("/login")}
+           
+            onClick={() => router.push("/login")
+              
+            }
             className="w-full text-left py-4 px-3 border-b hover:bg-gray-50 transition font-medium"
           >
             Delete account
