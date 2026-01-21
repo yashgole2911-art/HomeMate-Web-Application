@@ -95,7 +95,7 @@ const styles: any = {
     justifyContent: "center",
   },
   container: {
-    width: "360px", // 👈 mobile frame
+    width: "360px", 
     background: "#f7f8fa",
     padding: "14px",
   },
@@ -140,7 +140,7 @@ const styles: any = {
     display: "flex",
     flexDirection: "column",
     gap: "12px",
-    paddingBottom: "80px", // 👈 bottom nav space
+    paddingBottom: "80px", 
   },
   card: {
     display: "flex",
