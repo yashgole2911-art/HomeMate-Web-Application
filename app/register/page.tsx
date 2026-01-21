@@ -45,7 +45,7 @@ export default function Register() {
     </div>
 
         
-  {/*go back */}
+  
         <button
         type="button"
         onClick={() => router.push("/login")}
