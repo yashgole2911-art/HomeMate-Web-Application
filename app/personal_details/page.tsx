@@ -1,4 +1,8 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 export default function PersonalDetailsPage() {
+  const router = useRouter();
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="bg-white w-[360px] rounded-xl shadow-md p-6">
@@ -63,7 +67,9 @@ export default function PersonalDetailsPage() {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-6">
-          <button className="flex-1 bg-teal-500 text-white py-2 rounded-lg font-medium hover:bg-teal-600">
+          <button 
+          onClick={() => router.push("/work_details")}
+          className="flex-1 bg-teal-500 text-white py-2 rounded-lg font-medium hover:bg-teal-600">
             Continue
           </button>
 
