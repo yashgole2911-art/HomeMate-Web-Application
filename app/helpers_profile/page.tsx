@@ -8,42 +8,42 @@ const helpers = [
     name: "Sheetal",
     role: "Maid - Cleaner",
     area: "Dadar West",
-    image: "/avatars/female1.png",
+    image: "/avatars/avatar.jpg",
   },
   {
     id: "2",
     name: "Poonam",
     role: "Cook",
     area: "Dadar East",
-    image: "/avatars/female2.png",
+    image: "/avatars/avatar.jpg",
   },
   {
     id: "3",
     name: "Dinesh",
     role: "Driver",
     area: "Parel",
-    image: "/avatars/male1.png",
+    image: "/avatars/avatar.jpg",
   },
   {
     id: "4",
     name: "Ramprasad",
     role: "Milkman",
     area: "Dadar West",
-    image: "/avatars/male2.png",
+    image: "/avatars/avatar.jpg",
   },
   {
     id: "5",
     name: "Sarita",
     role: "Newspaper",
     area: "Dadar West",
-    image: "/avatars/female3.png",
+    image: "/avatars/avatar.jpg",
   },
   {
     id: "6",
     name: "Mohan",
     role: "Professional Laundry",
     area: "Dadar West",
-    image: "/avatars/male3.png",
+    image: "/avatars/avatar.jpg",
   },
 ];
 
@@ -69,7 +69,13 @@ export default function HelpersProfilesPage() {
             <div
               key={h.id}
               style={styles.card}
-              onClick={() => router.push('/helpers_profiles/${h.id}')}
+
+              onClick={() => {
+              if (h.name === "Sheetal") router.push("/sheetal_pandey");
+              else if (h.name === "Poonam") router.push("/Poonam");
+              else if (h.name === "Dinesh") router.push("/Dinesh");
+              // baki helpers agar add karoge to yaha aur else-if
+              }}
             >
               <img src={h.image} style={styles.avatar} />
               <div style={styles.info}>

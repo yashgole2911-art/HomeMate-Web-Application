@@ -8,21 +8,21 @@ const helpers: any = {
     role: "Maid - Cleaner",
     area: "Dadar West",
     phone: "9876543210",
-    image: "/avatars/sheetal.jpg",
+    image: "/avatars/avatar.jpg",
   },
   "2": {
     name: "Poonam",
     role: "Cook",
     area: "Dadar East",
     phone: "9876543211",
-    image: "/avatars/poonam.jpg",
+    image: "/avatars/avatar.jpg",
   },
   "3": {
     name: "Dinesh",
     role: "Driver",
     area: "Parel",
     phone: "9876543212",
-    image: "/avatars/dinesh.jpg",
+    image: "/avatars/avatar.jpg",
   },
 };
 
