@@ -13,9 +13,9 @@ const styles = {
 
   container: {
     width: "100%",
-    maxWidth: "360px",
+    maxWidth: "380px",
     background: "#fff",
-    borderRadius: "20px",
+    borderRadius: "0",
     padding: "16px",
     boxShadow: "0 6px 20px rgba(0,0,0,0.12)",
   },
