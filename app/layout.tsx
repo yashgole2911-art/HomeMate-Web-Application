@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GlobalWrapper from "./components/GlobalWrapper/page";
 
 export const metadata: Metadata = {
   title: "HomeMate",
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <GlobalWrapper>
+          {children}
+        </GlobalWrapper>
       </body>
     </html>
   );
